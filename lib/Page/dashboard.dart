@@ -30,7 +30,7 @@ class dashboardpage extends StatelessWidget {
             
           ],
           title: Padding(padding: 
-          const EdgeInsets.fromLTRB(0, 0, 0, 0),
+          const EdgeInsets.fromLTRB(172, 0, 0, 0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -67,7 +67,9 @@ class dashboardpage extends StatelessWidget {
           Center(
             child: Padding(
               padding: const EdgeInsets.fromLTRB(40, 25, 40, 10),
-              child: TextField(),
+              child: TextField(
+                enableInteractiveSelection: true,
+              ),
             ),
           ),
         ],
