@@ -74,7 +74,7 @@ class dashboardpage extends StatelessWidget {
                       border: OutlineInputBorder(borderRadius: BorderRadius.circular(40 )),
                       prefixIcon: Icon(Icons.search),
                       prefixIconColor: Colors.grey,
-                      hintText: 'Cari Kesukaanmu',
+                      hintText: 'Berbagi Pengalamanmu',
                 ),
               ),
             ),
@@ -88,60 +88,138 @@ class dashboardpage extends StatelessWidget {
             ),),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(50, 25, 50, 0),
+            padding: const EdgeInsets.fromLTRB(40, 25, 50, 0),
             child: Container(
               child: Column(
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    // crossAxisAlignment: cros,
                     children: [
+                      ElevatedButton(
+                        onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.white
+                      ), 
+                      child: Column(
+                        children: [
+                          CircleAvatar(backgroundImage: AssetImage('image/pantai.jpg'),),
+                          Text('Pantai', style: TextStyle(
+                            fontSize: 10,
+                            fontFamily: 'asset/Helvetica.ttf',
+                            color: Colors.black
+                          ),)
+                        ],
+                      )
+                      ),
                       ElevatedButton(onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white
-                      ), 
-                      child: CircleAvatar()),
-                        ElevatedButton(onPressed: () {},
+                        backgroundColor: Colors.white), 
+                      child: Column(
+                        children: [
+                          CircleAvatar(backgroundImage: AssetImage('image/gunung.jpg'),),
+                          Text('Gunung', style: TextStyle(
+                            fontSize: 10,
+                            fontFamily: 'asset/Helvetica.ttf',
+                            color: Colors.black
+                          ),)
+                        ],
+                      )
+                      ),
+                      ElevatedButton(onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white
-                      ), 
-                      child: CircleAvatar()),
-                       ElevatedButton(onPressed: () {},
+                        backgroundColor: Colors.white), 
+                      child: Column(
+                        children: [
+                          CircleAvatar(backgroundImage: AssetImage('image/kuliner.jpg'),),
+                          Text('Kuliner', style: TextStyle(
+                            fontSize: 10,
+                            fontFamily: 'asset/Helvetica.ttf',
+                            color: Colors.black
+                          ),)
+                        ],
+                      )
+                      ),
+                      ElevatedButton(onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white
-                      ), 
-                      child: CircleAvatar()),
-                        ElevatedButton(onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white
-                      ), 
-                      child: CircleAvatar()),
+                        backgroundColor: Colors.white), 
+                      child: Column(
+                        children: [
+                          CircleAvatar(backgroundImage: AssetImage('image/religi.jpg'),),
+                          Text('Religi', style: TextStyle(
+                            fontSize: 10,
+                            fontFamily: 'asset/Helvetica.ttf',
+                            color: Colors.black
+                          ),)
+                        ],
+                      )
+                      ),
                     ],
                   ),
                   Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              // crossAxisAlignment: cros,
-              children: [
-                ElevatedButton(onPressed: () {},
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      ElevatedButton(
+                        onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white
+                      ), 
+                      child: Column(
+                        children: [
+                          CircleAvatar(backgroundImage: AssetImage('image/Budaya.jpg'),),
+                          Text('Budaya', style: TextStyle(
+                            fontSize: 10,
+                            fontFamily: 'asset/Helvetica.ttf',
+                            color: Colors.black
+                          ),)
+                        ],
+                      )
+                ),
+                      ElevatedButton(onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.white
                 ), 
-                child: CircleAvatar()),
-                  ElevatedButton(onPressed: () {},
+                child: Column(
+                        children: [
+                          CircleAvatar(backgroundImage: AssetImage('image/agrowisata.jpg')),
+                          Text('Agrowisata', style: TextStyle(
+                            fontSize: 10,
+                            fontFamily: 'asset/Helvetica.ttf',
+                            color: Colors.black
+                          ),)
+                        ],
+                      )
+                      ),
+                      ElevatedButton(
+                        onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white
+                    ), 
+                      child: Column(
+                        children: [
+                          CircleAvatar(backgroundImage: AssetImage('image/edukasi.jpg')),
+                          Text('Edukasi', style: TextStyle(
+                            fontSize: 10,
+                            fontFamily: 'asset/Helvetica.ttf',
+                            color: Colors.black
+                          ),)
+                        ],
+                      )
+                ),
+                      ElevatedButton(onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.white
                 ), 
-                child: CircleAvatar()),
-                 ElevatedButton(onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.white
-                ), 
-                child: CircleAvatar()),
-                  ElevatedButton(onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.white
-                ), 
-                child: CircleAvatar()),
+                child: Column(
+                        children: [
+                          CircleAvatar(backgroundImage: AssetImage('image/air terjun.jpeg')),
+                          Text('Air terjun', style: TextStyle(
+                            fontSize: 10,
+                            fontFamily: 'asset/Helvetica.ttf',
+                            color: Colors.black
+                          ),)
+                        ],
+                      )
+                ),
               ],
             ),
                 ],
@@ -157,10 +235,7 @@ class dashboardpage extends StatelessWidget {
             ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
-            child: ListView(),
-          )
+
         ],
       ),
       )
