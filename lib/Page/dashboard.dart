@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/rendering/box.dart';
 import 'package:projek_pmob/Page/article.dart';
+import 'package:projek_pmob/Page/informasi.dart';
 
 
 class dashboardpage extends StatelessWidget {
@@ -16,7 +17,8 @@ class dashboardpage extends StatelessWidget {
             actions: [
               ElevatedButton(
                 onPressed: () {},
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.white,
+                ),
                 child: CircleAvatar(),
               ),
             ],
@@ -316,7 +318,16 @@ class dashboardpage extends StatelessWidget {
                           HomeArticle(),
                           HomeArticle()
                         ],)
-                        )
+                        ),
+              GridView(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 10,
+                childAspectRatio: 3/4,),
+                children: [
+                  informasi(),
+                ],)
                     ],
                   ),
                 ),
@@ -376,28 +387,10 @@ Widget build(BuildContext context) {
                 children: const [
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 2, 8, 0),
-                    child: Text("• Science",
+                    child: Text("• 2.5Rb Ulasan",
                         style: TextStyle(
-                            color: Colors.orange,
-                            fontSize: 10,
-                            fontWeight: FontWeight.w500,
-                            fontFamily: "Helvetica")),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(0, 2, 8, 0),
-                    child: Text("• By Hana",
-                        style: TextStyle(
-                            color: Colors.orange,
-                            fontSize: 10,
-                            fontWeight: FontWeight.w500,
-                            fontFamily: "Helvetica")),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(0, 2, 8, 0),
-                    child: Text("• 2.5k View",
-                        style: TextStyle(
-                            color: Colors.orange,
-                            fontSize: 10,
+                            color: Colors.deepOrange,
+                            fontSize: 12,
                             fontWeight: FontWeight.w500,
                             fontFamily: "Helvetica")),
                   ),
