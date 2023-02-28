@@ -3,7 +3,6 @@ import 'package:flutter/src/rendering/box.dart';
 import 'package:projek_pmob/Page/article.dart';
 import 'package:projek_pmob/Page/informasi.dart';
 
-
 class dashboardpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -17,7 +16,8 @@ class dashboardpage extends StatelessWidget {
             actions: [
               ElevatedButton(
                 onPressed: () {},
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.white,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.white,
                 ),
                 child: CircleAvatar(),
               ),
@@ -57,9 +57,9 @@ class dashboardpage extends StatelessWidget {
                         child: Text(
                           'Apa Kabar?',
                           style: TextStyle(
-                            fontFamily: 'Helvetica',
-                            fontSize: 30,
-                            fontWeight: FontWeight.w600),
+                              fontFamily: 'Helvetica',
+                              fontSize: 30,
+                              fontWeight: FontWeight.w600),
                         ),
                       ),
                       Center(
@@ -83,7 +83,8 @@ class dashboardpage extends StatelessWidget {
                         child: Text(
                           'Kategori',
                           textAlign: TextAlign.start,
-                          style: TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.w500),
                         ),
                       ),
                       Padding(
@@ -96,7 +97,8 @@ class dashboardpage extends StatelessWidget {
                             child: Column(
                               children: [
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
                                   children: [
                                     InkWell(
                                         onTap: () {},
@@ -105,17 +107,20 @@ class dashboardpage extends StatelessWidget {
                                           child: Column(
                                             children: const [
                                               CircleAvatar(
-                                                backgroundImage:
-                                                    AssetImage('image/pantai.jpg'),
+                                                backgroundImage: AssetImage(
+                                                    'image/pantai.jpg'),
                                               ),
                                               Padding(
-                                                padding: EdgeInsets.only(top: 8.0),
+                                                padding:
+                                                    EdgeInsets.only(top: 8.0),
                                                 child: Text(
                                                   'Pantai',
                                                   style: TextStyle(
-                                                      fontFamily: 'asset/Helvetica.ttf',
+                                                      fontFamily:
+                                                          'asset/Helvetica.ttf',
                                                       fontSize: 10,
-                                                      fontWeight: FontWeight.w500,
+                                                      fontWeight:
+                                                          FontWeight.w500,
                                                       color: Colors.black),
                                                 ),
                                               )
@@ -129,17 +134,20 @@ class dashboardpage extends StatelessWidget {
                                           child: Column(
                                             children: const [
                                               CircleAvatar(
-                                                backgroundImage:
-                                                    AssetImage('image/gunung.jpg'),
+                                                backgroundImage: AssetImage(
+                                                    'image/gunung.jpg'),
                                               ),
                                               Padding(
-                                                padding: EdgeInsets.only(top: 8.0),
+                                                padding:
+                                                    EdgeInsets.only(top: 8.0),
                                                 child: Text(
                                                   'Gunung',
                                                   style: TextStyle(
-                                                      fontFamily: 'asset/Helvetica.ttf',
+                                                      fontFamily:
+                                                          'asset/Helvetica.ttf',
                                                       fontSize: 10,
-                                                      fontWeight: FontWeight.w500,
+                                                      fontWeight:
+                                                          FontWeight.w500,
                                                       color: Colors.black),
                                                 ),
                                               )
@@ -153,17 +161,20 @@ class dashboardpage extends StatelessWidget {
                                           child: Column(
                                             children: const [
                                               CircleAvatar(
-                                                backgroundImage:
-                                                    AssetImage('image/kuliner.jpg'),
+                                                backgroundImage: AssetImage(
+                                                    'image/kuliner.jpg'),
                                               ),
                                               Padding(
-                                                padding: EdgeInsets.only(top: 8.0),
+                                                padding:
+                                                    EdgeInsets.only(top: 8.0),
                                                 child: Text(
                                                   'Kuliner',
                                                   style: TextStyle(
-                                                      fontFamily: 'asset/Helvetica.ttf',
+                                                      fontFamily:
+                                                          'asset/Helvetica.ttf',
                                                       fontSize: 10,
-                                                      fontWeight: FontWeight.w500,
+                                                      fontWeight:
+                                                          FontWeight.w500,
                                                       color: Colors.black),
                                                 ),
                                               )
@@ -177,17 +188,20 @@ class dashboardpage extends StatelessWidget {
                                           child: Column(
                                             children: const [
                                               CircleAvatar(
-                                                backgroundImage:
-                                                    AssetImage('image/religi.jpg'),
+                                                backgroundImage: AssetImage(
+                                                    'image/religi.jpg'),
                                               ),
                                               Padding(
-                                                padding: EdgeInsets.only(top: 8.0),
+                                                padding:
+                                                    EdgeInsets.only(top: 8.0),
                                                 child: Text(
                                                   'Religi',
                                                   style: TextStyle(
-                                                      fontFamily: 'asset/Helvetica.ttf',
+                                                      fontFamily:
+                                                          'asset/Helvetica.ttf',
                                                       fontSize: 10,
-                                                      fontWeight: FontWeight.w500,
+                                                      fontWeight:
+                                                          FontWeight.w500,
                                                       color: Colors.black),
                                                 ),
                                               )
@@ -197,7 +211,8 @@ class dashboardpage extends StatelessWidget {
                                   ],
                                 ),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
                                   children: [
                                     InkWell(
                                         onTap: () {},
@@ -206,17 +221,20 @@ class dashboardpage extends StatelessWidget {
                                           child: Column(
                                             children: const [
                                               CircleAvatar(
-                                                backgroundImage:
-                                                    AssetImage('image/Budaya.jpg'),
+                                                backgroundImage: AssetImage(
+                                                    'image/Budaya.jpg'),
                                               ),
                                               Padding(
-                                                padding: EdgeInsets.only(top: 8.0),
+                                                padding:
+                                                    EdgeInsets.only(top: 8.0),
                                                 child: Text(
                                                   'Budaya',
                                                   style: TextStyle(
-                                                      fontFamily: 'asset/Helvetica.ttf',
+                                                      fontFamily:
+                                                          'asset/Helvetica.ttf',
                                                       fontSize: 10,
-                                                      fontWeight: FontWeight.w500,
+                                                      fontWeight:
+                                                          FontWeight.w500,
                                                       color: Colors.black),
                                                 ),
                                               )
@@ -230,17 +248,20 @@ class dashboardpage extends StatelessWidget {
                                           child: Column(
                                             children: const [
                                               CircleAvatar(
-                                                backgroundImage:
-                                                    AssetImage('image/agrowisata.jpg'),
+                                                backgroundImage: AssetImage(
+                                                    'image/agrowisata.jpg'),
                                               ),
                                               Padding(
-                                                padding: EdgeInsets.only(top: 8.0),
+                                                padding:
+                                                    EdgeInsets.only(top: 8.0),
                                                 child: Text(
                                                   'Agrowisata',
                                                   style: TextStyle(
-                                                      fontFamily: 'asset/Helvetica.ttf',
+                                                      fontFamily:
+                                                          'asset/Helvetica.ttf',
                                                       fontSize: 10,
-                                                      fontWeight: FontWeight.w500,
+                                                      fontWeight:
+                                                          FontWeight.w500,
                                                       color: Colors.black),
                                                 ),
                                               )
@@ -254,17 +275,20 @@ class dashboardpage extends StatelessWidget {
                                           child: Column(
                                             children: const [
                                               CircleAvatar(
-                                                backgroundImage:
-                                                    AssetImage('image/edukasi.jpg'),
+                                                backgroundImage: AssetImage(
+                                                    'image/edukasi.jpg'),
                                               ),
                                               Padding(
-                                                padding: EdgeInsets.only(top: 8.0),
+                                                padding:
+                                                    EdgeInsets.only(top: 8.0),
                                                 child: Text(
                                                   'Edukasi',
                                                   style: TextStyle(
-                                                      fontFamily: 'asset/Helvetica.ttf',
+                                                      fontFamily:
+                                                          'asset/Helvetica.ttf',
                                                       fontSize: 10,
-                                                      fontWeight: FontWeight.w500,
+                                                      fontWeight:
+                                                          FontWeight.w500,
                                                       color: Colors.black),
                                                 ),
                                               )
@@ -281,12 +305,14 @@ class dashboardpage extends StatelessWidget {
                                                 backgroundImage: AssetImage(
                                                     'image/air terjun.jpeg')),
                                             Padding(
-                                              padding: EdgeInsets.only(top: 8.0),
+                                              padding:
+                                                  EdgeInsets.only(top: 8.0),
                                               child: Text(
                                                 'Air terjun',
                                                 style: TextStyle(
                                                     fontSize: 10,
-                                                    fontFamily: 'asset/Helvetica.ttf',
+                                                    fontFamily:
+                                                        'asset/Helvetica.ttf',
                                                     fontWeight: FontWeight.w500,
                                                     color: Colors.black),
                                               ),
@@ -306,44 +332,102 @@ class dashboardpage extends StatelessWidget {
                         padding: const EdgeInsets.fromLTRB(25, 20, 200, 0),
                         child: Text(
                           'Artikel Wisata',
-                          style: TextStyle(fontSize: 17, fontWeight: FontWeight.w400),
+                          style: TextStyle(
+                              fontSize: 17, fontWeight: FontWeight.w400),
                         ),
                       ),
                       Container(
-                        height: 400,
-                        child: ListView
-                        (scrollDirection: Axis.horizontal,
-                        children: const [
-                          HomeArticle(),
-                          HomeArticle(),
-                          HomeArticle()
-                        ],)
+                        height: 200,
+                        child: ListView(
+                          scrollDirection: Axis.horizontal,
+                          children: const [
+                            HomeArticle(),
+                            HomeArticle(),
+                            HomeArticle()
+                          ],
                         ),
-              GridView(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                crossAxisSpacing: 10,
-                mainAxisSpacing: 10,
-                childAspectRatio: 3/4,),
-                children: [
-                  informasi(),
-                ],)
+                      ),
+                      Column(
+                        children: [
+                           Padding(
+                             padding: const EdgeInsets.fromLTRB(20, 10, 20, 5),
+                             child: Row(
+                                children: [
+                                  Information('Informasi Umum'),
+                                  Information('Kartu Kredit')
+                                  ],
+                              ),
+                           ),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(20, 10, 20, 5),
+                              child: Row(
+                                children: [
+                                  Information('Nomor Darurat'),
+                                  Information('Kedutaan')
+                                ],
+                              ),
+                            )
+                        ],
+                      )
                     ],
                   ),
                 ),
               ],
             ),
           ),
-        )
-      );
+        ));
+  }
+}
+
+class Information extends StatelessWidget {
+  final String Nama;
+  
+  Information(this.Nama);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8),
+      child: Container(
+        width: 150,
+        height: 120,
+        child: SizedBox(
+            width: 150,
+            height: 120,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: Stack(
+                children: [
+                  Image(
+                    width: 200,
+                    height: 160,
+                    fit: BoxFit.cover,
+                    image: NetworkImage("https://picsum.photos/280/130"),
+                  ),
+                  Container(
+                    alignment: Alignment.bottomCenter,
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom: 10),
+                      child: Text(
+                        Nama,
+                        style: TextStyle(
+                            fontFamily: 'Helvetica', color: Colors.white),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            )),
+      ),
+    );
   }
 }
 
 class HomeArticle extends StatelessWidget {
-  const HomeArticle ({super.key});
+  const HomeArticle({super.key});
 
-   @override
-Widget build(BuildContext context) {
+  @override
+  Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
         Navigator.push(

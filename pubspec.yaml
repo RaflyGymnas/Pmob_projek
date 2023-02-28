@@ -86,6 +86,9 @@ flutter:
     - family: Helvetica
       fonts: 
         - asset: Font/Helvetica.ttf
+    - family: JosefinSans
+      fonts:
+        - asset: Font/JosefinSans-Italic-VariableFont_wght.ttf
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projek_pmob/Page/Profile.dart';
 import 'package:projek_pmob/Page/dashboard.dart';
 import 'package:flutter/src/rendering/box.dart';
 
@@ -11,6 +12,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return dashboardpage();
+    return Profile();
   }
 }
