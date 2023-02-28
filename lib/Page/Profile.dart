@@ -8,7 +8,7 @@ class Profile extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('mamak'),
+          title: Text('profil'),
         ),
         body: Center(
           child: Text('mamak'),
