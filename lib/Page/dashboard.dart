@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/rendering/box.dart';
 import 'package:projek_pmob/Page/article.dart';
-import 'package:projek_pmob/Page/informasi.dart';
+import 'package:projek_pmob/Page/bookmark.dart';
 
 class dashboardpage extends StatelessWidget {
   @override
@@ -411,10 +411,12 @@ class Information extends StatelessWidget {
                       child: Text(
                         Nama,
                         style: TextStyle(
-                            fontFamily: 'Helvetica', color: Colors.white),
+                            fontFamily: 'Play.ttf', 
+                            fontWeight: FontWeight.w900,
+                            color: Colors.orange,
                       ),
                     ),
-                  )
+                  ))
                 ],
               ),
             )),
