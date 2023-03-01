@@ -416,7 +416,7 @@ class Information extends StatelessWidget {
                             color: Colors.orange,
                       ),
                     ),
-                  ))
+                  )),
                 ],
               ),
             )),
