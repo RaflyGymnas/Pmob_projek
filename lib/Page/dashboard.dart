@@ -433,7 +433,7 @@ class HomeArticle extends StatelessWidget {
     return InkWell(
       onTap: () {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => const Article()));
+            context, MaterialPageRoute(builder: (context) => Article()));
       },
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 8),
