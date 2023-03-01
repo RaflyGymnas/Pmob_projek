@@ -36,7 +36,7 @@ class _NavBarState extends State<NavBar> {
           FloatingNavBarItem(
               iconData: Icons.bookmark, page: bookmark(), title: 'Ditandai'),
           FloatingNavBarItem(
-              iconData: Icons.person_4_rounded,
+              iconData: Icons.person_2,
               page: Profile(),
               title: 'Profil'),
         ],
