@@ -6,9 +6,18 @@ class lokasi extends StatelessWidget {
  @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Lokasi'),
+        elevation: 0,
+        toolbarHeight: 75,
+        backgroundColor: Colors.white,
+        title: Text('Lokasi',
+        style: TextStyle(
+          fontFamily: 'Play-Regular.ttf',
+          fontSize: 15,
+          fontWeight: FontWeight.w500
+        ),),
         ),
         body: Center(
           child: Text('mamak'),
