@@ -12,7 +12,7 @@ class lokasi extends StatelessWidget {
         elevation: 0,
         toolbarHeight: 50,
         backgroundColor: Colors.white,
-        title: Text('Lokasi',
+        title: Text('Lokasi anjay mabar',
         style: TextStyle(
           fontFamily: 'Play-Regular.ttf',
           fontSize: 20,
