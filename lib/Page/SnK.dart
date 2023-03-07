@@ -11,7 +11,7 @@ class SyaratnKetentuan extends StatelessWidget {
           title: Text('Syarat dan Ketentuan'),
         ),
         body: Center(
-          child: Text('mamak'),
+          child: Text('hola'),
         ),
       ),
     );
