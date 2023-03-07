@@ -20,7 +20,7 @@ class lokasi extends StatelessWidget {
         ),),
         ),
         body: Center(
-          child: Text('mamak'),
+          child: Text('Hola'),
         ),
       ),
     );
