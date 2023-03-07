@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SyaratnKetentuan extends StatelessWidget {
-  const SyaratnKetentuan ({super.key});
+  const SyaratnKetentuan({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class SyaratnKetentuan extends StatelessWidget {
           title: Text('Syarat dan Ketentuan'),
         ),
         body: Center(
-          child: Text('hola'),
+          child: Text('Holaa'),
         ),
       ),
     );
