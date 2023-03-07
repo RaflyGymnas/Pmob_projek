@@ -68,81 +68,91 @@ class Profile extends StatelessWidget {
                                   textAlign: TextAlign.center,
                                 ),
                               ),
-                              Column(
-                                children: [
-                                  InkWell(
-                                        onTap: () => Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                                builder: (context) =>
-                                                    bookmark())),
-                                        child: Ink(
-                                            padding: const EdgeInsets.symmetric(
-                                                vertical: 12),
-                                            width: 350,
-                                            decoration: BoxDecoration(
-                                              color: Colors.white,
-                                            ),
-                                            child: ListTile(
-                                              leading: Icon(Icons.bookmark),
-                                              title: Text(
-                                                'Tempat yang anda tandai',
-                                                style: TextStyle(
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(0, 2, 80, 0),
+                                child: Column(
+                                  children: [
+                                    InkWell(
+                                          onTap: () => Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      bookmark())),
+                                          child: Ink(
+                                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                              width: 350,
+                                              decoration: BoxDecoration(
+                                                color: Colors.white,
+                                              ),
+                                              child: ListTile(
+                                                leading: Icon(Icons.bookmark,),
+                                                title: Text(
+                                                  'Tempat yang anda tandai',
+                                                  style: TextStyle(
+                                                      fontFamily:
+                                                          'Play-Regular.ttf',
+                                                      fontSize: 15,
+                                                      color: Colors.black,
+                                                      fontWeight:
+                                                          FontWeight.w600),
+                                                ),
+                                                subtitle: Text(
+                                                  'Tempat yang tertanda',
+                                                  style: TextStyle(
                                                     fontFamily:
                                                         'Play-Regular.ttf',
-                                                    fontSize: 15,
+                                                    fontSize: 10,
                                                     color: Colors.black,
-                                                    fontWeight:
-                                                        FontWeight.w600),
-                                              ),
-                                              subtitle: Text(
-                                                'Tempat yang tertanda',
-                                                style: TextStyle(
-                                                  fontFamily:
-                                                      'Play-Regular.ttf',
-                                                  fontSize: 10,
-                                                  color: Colors.black,
+                                                  ),
                                                 ),
+                                              )),
+                                        ),
+                                        InkWell(
+                                          onTap: () => Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      SyaratnKetentuan())),
+                                          child: Ink(
+                                              padding: const EdgeInsets.symmetric(
+                                                  vertical: 0),
+                                              width: 350,
+                                              decoration: BoxDecoration(
+                                                color: Colors.white,
                                               ),
-                                            )),
-                                      ),
-                                      InkWell(
-                                        onTap: () => Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                                builder: (context) =>
-                                                    SyaratnKetentuan())),
-                                        child: Ink(
-                                            padding: const EdgeInsets.symmetric(
-                                                vertical: 12),
-                                            width: 350,
-                                            decoration: BoxDecoration(
-                                              color: Colors.white,
-                                            ),
-                                            child: ListTile(
-                                              leading: Icon(Icons.book),
-                                              title: Text(
-                                                'Syarat dan Ketentuan',
-                                                style: TextStyle(
+                                              child: ListTile(
+                                                leading: Icon(Icons.book),
+                                                title: Text(
+                                                  'Syarat dan Ketentuan',
+                                                  style: TextStyle(
+                                                      fontFamily:
+                                                          'Play-Regular.ttf',
+                                                      fontSize: 15,
+                                                      color: Colors.black,
+                                                      fontWeight:
+                                                          FontWeight.w600),
+                                                ),
+                                                subtitle: Text(
+                                                  'Lihat Syarat dan Ketentuan kami',
+                                                  style: TextStyle(
                                                     fontFamily:
                                                         'Play-Regular.ttf',
-                                                    fontSize: 15,
+                                                    fontSize: 10,
                                                     color: Colors.black,
-                                                    fontWeight:
-                                                        FontWeight.w600),
-                                              ),
-                                              subtitle: Text(
-                                                'Lihat Syarat dan Ketentuan kami',
-                                                style: TextStyle(
-                                                  fontFamily:
-                                                      'Play-Regular.ttf',
-                                                  fontSize: 10,
-                                                  color: Colors.black,
+                                                  ),
                                                 ),
-                                              ),
-                                            )),
-                                      ),
-                                ],
+                                              )),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+                                          child: Divider(
+                                            thickness: 1,
+                                            color: Colors.black,
+                                          ),
+                                        ),
+                                        
+                                  ],
+                                ),
                               )
                             ],
                           )
