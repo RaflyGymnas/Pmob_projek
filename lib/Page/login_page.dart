@@ -8,7 +8,25 @@ class Login_page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ,
+      body: SingleChildScrollView(
+        child: Stack(
+          children: [
+            Container(
+              height: 800,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('image/Bg SigIn.jpg'),
+                  fit: BoxFit.cover)
+              ),
+            ),
+            Center(
+              child: Column(
+                children: [],
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
