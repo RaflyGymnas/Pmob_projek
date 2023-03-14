@@ -3,9 +3,10 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
 import 'package:projek_pmob/NavBar.dart';
 import 'package:projek_pmob/Page/Lokasi.dart';
+import 'package:projek_pmob/Page/login_page.dart';
 
-class SignIn extends StatelessWidget {
-  const SignIn({super.key});
+class SignUp extends StatelessWidget {
+  const SignUp({super.key});
 
   @override
  Widget build(BuildContext context) {
@@ -44,13 +45,33 @@ class SignIn extends StatelessWidget {
                               fontFamily: "Helvetica",
                               fontSize: 14),
                           contentPadding: EdgeInsets.fromLTRB(20, 22, 0, 17),
-                          suffixIcon: Icon(
-                            Icons.person_outline_outlined,
-                            color: Colors.black,
-                            size: 18,
-                          ),
                         ),
                       ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 15, left: 20, right: 20),
+                    child: TextField(
+                      obscureText: true,
+                      style: TextStyle(
+                        color: Colors.purple,
+                        fontFamily: 'Helvetica',
+                        fontSize: 15,
+                      ),
+                      decoration:InputDecoration(
+                        filled: true,
+                        fillColor: Colors.grey.shade300,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(15)),
+                          borderSide: BorderSide(color: Colors.purple),
+                        ),
+                        hintText: "Email",
+                        hintStyle: TextStyle(
+                            color: Colors.black54,
+                            fontFamily: "Helvetica",
+                            fontSize: 14),
+                        contentPadding: EdgeInsets.fromLTRB(20, 22, 0, 17),
+                      ),
+                    ),
                   ),
                   Padding(
                     padding: EdgeInsets.only(top: 15, left: 20, right: 20),
@@ -98,7 +119,7 @@ class SignIn extends StatelessWidget {
                           borderRadius: BorderRadius.all(Radius.circular(15)),
                           borderSide: BorderSide(color: Colors.purple),
                         ),
-                        hintText: "Kata sandi",
+                        hintText: "Konfirmasi Kata sandi",
                         hintStyle: TextStyle(
                             color: Colors.black54,
                             fontFamily: "Helvetica",
@@ -112,50 +133,7 @@ class SignIn extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.only(top: 15, left: 20, right: 20),
-                    child: TextField(
-                      obscureText: true,
-                      style: TextStyle(
-                        color: Colors.purple,
-                        fontFamily: 'Helvetica',
-                        fontSize: 15,
-                      ),
-                      decoration:InputDecoration(
-                        filled: true,
-                        fillColor: Colors.grey.shade300,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(color: Colors.purple),
-                        ),
-                        hintText: "Kata sandi",
-                        hintStyle: TextStyle(
-                            color: Colors.black54,
-                            fontFamily: "Helvetica",
-                            fontSize: 14),
-                        contentPadding: EdgeInsets.fromLTRB(20, 22, 0, 17),
-                        suffixIcon: Icon(
-                          Icons.key_rounded,
-                          color: Colors.black,
-                          size: 18,
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.only(top: 15),
-                    child: SizedBox(
-                      width: 330,
-                      child: Text(
-                        "Lupa Kata sandi?",
-                        textAlign: TextAlign.right,
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontFamily: "Helvetica",
-                        ),
-                      ),
-                    ),
-                  ),
+                  
                   Padding(
                     padding:
                         const EdgeInsets.only(left: 20, right: 20, top: 18),
@@ -177,7 +155,7 @@ class SignIn extends StatelessWidget {
                               color: Colors.blue,
                             ),
                             child: const Center(
-                              child: Text("Masuk",
+                              child: Text("Daftar",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     color: Colors.white,
@@ -188,10 +166,36 @@ class SignIn extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Divider(
-                          color: Colors.amber,
-                          indent: 100,
-                          endIndent: 10,
+                        // Divider(
+                        //   color: Colors.amber,
+                        //   indent: 100,
+                        //   endIndent: 10,
+                        // )
+                         Padding(
+                          padding: const EdgeInsets.only(top: 50),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text('Sudah ada akun?'),
+                              InkWell(
+                                onTap: () {
+                                  Navigator.pushReplacement(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => Login_page()));
+                                },
+                                child: Container(
+                                  child: Text("Masuk",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        color: Colors.blue,
+                                        fontFamily: "Helvetica",
+                                      )),
+                                ),
+                              ),
+                              
+                            ],
+                          ),
                         )
                       ],
                     ),
