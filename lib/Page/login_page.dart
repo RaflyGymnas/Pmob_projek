@@ -17,35 +17,41 @@ class Login_page extends StatelessWidget {
               height: 800,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage("Bg SigIn.jpg"),
+                      image: AssetImage("image/BgLogin.png"),
                       fit: BoxFit.cover)),
             ),
             Center(
               child: Column(
                 children: [
-                  const Padding(
+                   Padding(
                     padding: EdgeInsets.only(top: 500, left: 20, right: 20),
-                    child: TextField(
-                      style: TextStyle(
-                        color: Colors.purple,
-                        fontFamily: 'Montserrat',
-                        fontSize: 15,
-                      ),
-                      decoration: InputDecoration(
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(50)),
-                          borderSide: BorderSide(color: Colors.orange),
+                    child: Material(
+                      borderRadius:BorderRadius.circular(15),
+                      color: Colors.grey,
+                      child: TextField(
+                        
+                        style: TextStyle(
+                          color: Colors.purple,
+                          fontFamily: 'Montserrat',
+                          fontSize: 15,
                         ),
-                        hintText: "chris@email.com",
-                        hintStyle: TextStyle(
-                            color: Colors.orange,
-                            fontFamily: "Montserrat",
-                            fontSize: 15),
-                        contentPadding: EdgeInsets.fromLTRB(20, 22, 0, 22),
-                        suffixIcon: Icon(
-                          Icons.person_2_rounded,
-                          color: Colors.orange,
-                          size: 18,
+                        decoration: InputDecoration(
+                          
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(15)),
+                            borderSide: BorderSide(color: Colors.grey),
+                          ),
+                          hintText: "Email",
+                          hintStyle: TextStyle(
+                              color: Colors.black,
+                              fontFamily: "Helverica",
+                              fontSize: 15),
+                          contentPadding: EdgeInsets.fromLTRB(20, 22, 0, 22),
+                          suffixIcon: Icon(
+                            Icons.person_outline_outlined,
+                            color: Colors.black,
+                            size: 18,
+                          ),
                         ),
                       ),
                     ),
@@ -61,14 +67,14 @@ class Login_page extends StatelessWidget {
                       ),
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(50)),
+                          borderRadius: BorderRadius.all(Radius.circular(15)),
                           borderSide: BorderSide(color: Colors.purple),
                         ),
                         hintText: "Password",
                         hintStyle: TextStyle(
                             color: Colors.purple,
-                            fontFamily: "Montserrat",
-                            fontSize: 15),
+                            fontFamily: "Helvetica",
+                            fontSize: 13),
                         contentPadding: EdgeInsets.fromLTRB(20, 22, 0, 22),
                         suffixIcon: Icon(
                           Icons.key_rounded,
