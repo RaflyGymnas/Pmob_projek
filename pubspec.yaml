@@ -73,7 +73,7 @@ flutter:
     - image/agrowisata.jpg
     - image/edukasi.jpg
     - image/justin.jpeg
-    - image/Bg SignIn.jpg
+    - image/BgLogin.png
     - assets/images/
 
   # An image asset can refer to one or more resolution-specific "variants", see
