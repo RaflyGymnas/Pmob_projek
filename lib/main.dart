@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:projek_pmob/Page/Profile.dart';
 import 'package:projek_pmob/Page/dashboard.dart';
 import 'package:flutter/src/rendering/box.dart';
+import 'package:projek_pmob/Page/login_page.dart';
 import 'package:projek_pmob/components/already_have_an_account_acheck.dart';
 import 'NavBar.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: NavBar()
+      home: Login_page()
     );
   }
 }
