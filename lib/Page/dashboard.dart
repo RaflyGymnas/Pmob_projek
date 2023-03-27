@@ -413,7 +413,7 @@ class Information extends StatelessWidget {
                         style: TextStyle(
                             fontFamily: 'Play.ttf', 
                             fontWeight: FontWeight.w900,
-                            color: Colors.orange,
+                            color: Colors.black,
                       ),
                     ),
                   )),
