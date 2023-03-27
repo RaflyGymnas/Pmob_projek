@@ -34,6 +34,8 @@ dependencies:
     sdk: flutter
   flutter_native_splash: ^2.2.19
   flutter_svg: ^2.0.3
+  liquid_swipe: ^3.0.0
+  smooth_page_indicator: ^1.0.0+2
 
 dev_dependencies:
 
@@ -75,6 +77,7 @@ flutter:
     - image/justin.jpeg
     - image/BgLogin.png
     - assets/images/
+    - assets/images/travelars-logo/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -92,6 +95,10 @@ flutter:
     - family: Play
       fonts:
         - asset: Font/Play-Regular.ttf
+    - family: Inter
+      fonts:
+        - asset: Font/Inter-Regular.ttf
+
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
