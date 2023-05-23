@@ -29,7 +29,7 @@ class Article extends StatelessWidget {
           )
         ),
         Padding(
-          padding: EdgeInsets.fromLTRB(0, 10, 150, 10),
+          padding: EdgeInsets.fromLTRB(0, 10, 110, 10),
           child: Text(this.Judul,
           style: TextStyle(fontFamily: 'Helvetica', 
           fontSize: 25, 

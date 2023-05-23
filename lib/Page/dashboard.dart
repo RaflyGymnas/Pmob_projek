@@ -345,6 +345,7 @@ class dashboardpage extends StatelessWidget {
                       Container(
                         height: 200,
                         child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
                           itemCount: itemdata.length,
                           itemBuilder: (ctx, counter) => ChangeNotifierProvider.value(value: itemdata[counter],
                           child: HomeArticle(),))
