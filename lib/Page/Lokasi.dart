@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projek_pmob/Page/article.dart';
+import 'package:projek_pmob/widget/article.dart';
 
 class lokasi extends StatelessWidget {
   const lokasi({super.key});

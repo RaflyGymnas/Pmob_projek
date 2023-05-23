@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:projek_pmob/model/artikel.dart';
+import 'package:projek_pmob/provider/articles.dart';
+import 'package:provider/provider.dart';
 
 class Article extends StatelessWidget {
-  const Article({super.key});
-
+   final String Judul;
+  final String Gambar;
+  final String Deskripsi;
+  final String Ulasan;
+  Article(this.Judul,this.Gambar, this.Deskripsi, this.Ulasan);
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -17,13 +24,13 @@ class Article extends StatelessWidget {
           width: 480,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(12),
-            child: Image.network("https://picsum.photos/280/130", 
+            child: Image.network(this.Gambar, 
             fit: BoxFit.cover,)
           )
         ),
-        const Padding(
+        Padding(
           padding: EdgeInsets.fromLTRB(0, 10, 150, 10),
-          child: Text("Nama desa bla bla",
+          child: Text(this.Judul,
           style: TextStyle(fontFamily: 'Helvetica', 
           fontSize: 25, 
           fontWeight: FontWeight.w700,
@@ -37,7 +44,7 @@ class Article extends StatelessWidget {
               Container(
                 child: InkWell(
                   onTap: () {},
-                  child: Text('Deskripsi',
+                  child: Text(this.Deskripsi,
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 15,
@@ -48,7 +55,7 @@ class Article extends StatelessWidget {
                 margin: EdgeInsets.only(left: 10),
                 child: InkWell(
                   onTap: () {},
-                  child: Text('Ulasan',
+                  child: Text(this.Ulasan,
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 15,
