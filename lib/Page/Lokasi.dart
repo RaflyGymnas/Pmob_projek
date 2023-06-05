@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projek_pmob/Page/tempat.dart';
 import 'package:projek_pmob/widget/article.dart';
 
 class lokasi extends StatelessWidget {
@@ -156,21 +157,96 @@ class lokasi extends StatelessWidget {
                               children: [
                                 Column(
                                   children: [
-                                    Tempat('Aceh'),
-                                    Tempat('Aceh'),
-                                    Tempat('Aceh'),
-                                    Tempat('Aceh'),
-                                    Tempat('Aceh'),
-                                    Tempat('Aceh'),
-                                    Tempat('Aceh'),
-                                    Tempat('Aceh'),
-                                    Tempat('Aceh'),
-                                    Tempat('Aceh'),
-                                    Tempat('Aceh'),
-                                    Tempat('Aceh'),
-                                    Tempat('Aceh'),
-                                    Tempat('Aceh'),
-                                    Tempat('Aceh'),
+                                   InkWell(
+                                    onTap: (){
+                                      Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => SumateraBarat()));
+                                    },
+                                     child: Padding(
+                                         padding: const EdgeInsets.symmetric(vertical: 8),
+                                         child: Container(
+                                           width: 350,
+                                           height: 130,
+                                           child: SizedBox(
+                                               width: 150,
+                                               height: 120,
+                                               child: ClipRRect(
+                                                 borderRadius: BorderRadius.circular(10),
+                                                 child: Stack(
+                                                   children: [
+                                                     Image(
+                                                       width: 350,
+                                                       height: 180,
+                                                       fit: BoxFit.cover,
+                                                       image: NetworkImage("https://picsum.photos/280/130"),
+                                                     ),
+                                                     Container(
+                                                       alignment: Alignment.centerLeft,
+                                                       child: Padding(
+                                                         padding: const EdgeInsets.only(left: 20),
+                                                         child: Text(
+                                                           'Sumatra Barat',
+                                                           style: TextStyle(
+                                                               fontFamily: 'Play.ttf', 
+                                                               fontWeight: FontWeight.w900,
+                                                               color: Colors.white,
+                                                               fontSize: 26
+                                                         ),
+                                                       ),
+                                                     )),
+                                                   ],
+                                                 ),
+                                               )),
+                                         ),
+                                       ),
+                                   ),
+    InkWell(
+    onTap: (){
+      Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => Malang()));
+    },
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8),
+        child: Container(
+          width: 350,
+          height: 130,
+          child: SizedBox(
+              width: 150,
+              height: 120,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Stack(
+                  children: [
+                    Image(
+                      width: 350,
+                      height: 180,
+                      fit: BoxFit.cover,
+                      image: NetworkImage("https://picsum.photos/280/130"),
+                    ),
+                    Container(
+                      alignment: Alignment.centerLeft,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: Text(
+                          'Malang',
+                          style: TextStyle(
+                              fontFamily: 'Play.ttf', 
+                              fontWeight: FontWeight.w900,
+                              color: Colors.white,
+                              fontSize: 26
+                        ),
+                      ),
+                    )),
+                  ],
+                ),
+              )),
+        ),
+      ),
+    ),
                                   ],
                                 ),
                                 Column(
