@@ -6,6 +6,8 @@ class artikel with ChangeNotifier{
   String lokasi;
   String Deskripsi;
   String Ulasan;
+  int Provinsi;
 
-  artikel(this.gambar, this.Deskripsi, this.Judul, this.Ulasan, this.lokasi);
+
+  artikel(this.gambar, this.Deskripsi, this.Judul, this.Ulasan, this.lokasi, this.Provinsi);
 }
