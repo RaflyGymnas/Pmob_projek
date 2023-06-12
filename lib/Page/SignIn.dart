@@ -4,12 +4,20 @@ import 'package:flutter/material.dart';
 import 'package:projek_pmob/NavBar.dart';
 import 'package:projek_pmob/Page/Lokasi.dart';
 import 'package:projek_pmob/Page/login_page.dart';
+import 'package:provider/provider.dart';
+
+import '../provider/auth.dart';
 
 class SignUp extends StatelessWidget {
-  const SignUp({super.key});
+  SignUp({super.key});
+
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+  final TextEditingController PenggunaController = TextEditingController();
 
   @override
  Widget build(BuildContext context) {
+  final authService = Provider.of<AuthService>(context);
     return Scaffold(
       body: SingleChildScrollView(
         child: Stack(
@@ -27,6 +35,7 @@ class SignUp extends StatelessWidget {
                    Padding(
                     padding: EdgeInsets.only(top: 240, left: 20, right: 20),
                     child: TextField(
+                        controller: PenggunaController,
                         style: TextStyle(
                           color: Colors.grey.shade400,
                           fontFamily: 'Helvetica',
@@ -51,6 +60,7 @@ class SignUp extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(top: 15, left: 20, right: 20),
                     child: TextField(
+                      controller: emailController,
                       obscureText: true,
                       style: TextStyle(
                         color: Colors.purple,
@@ -76,6 +86,7 @@ class SignUp extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(top: 15, left: 20, right: 20),
                     child: TextField(
+                      controller: passwordController,
                       obscureText: true,
                       style: TextStyle(
                         color: Colors.purple,
@@ -106,6 +117,7 @@ class SignUp extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(top: 15, left: 20, right: 20),
                     child: TextField(
+                      controller: passwordController,
                       obscureText: true,
                       style: TextStyle(
                         color: Colors.purple,
@@ -141,7 +153,8 @@ class SignUp extends StatelessWidget {
                       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         InkWell(
-                          onTap: () {
+                          onTap: () async {
+                            await authService.createUserWithEmailAndPassword(emailController.text, passwordController.text).then((value) => authService.updateUserData(PenggunaController.text));
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(

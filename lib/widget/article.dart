@@ -24,12 +24,12 @@ class Article extends StatelessWidget {
           width: 480,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(12),
-            child: Image.network(this.Gambar, 
+            child: Image.asset(Gambar, 
             fit: BoxFit.cover,)
           )
         ),
         Padding(
-          padding: EdgeInsets.fromLTRB(0, 10, 110, 10),
+          padding: EdgeInsets.fromLTRB(18, 10, 220, 10),
           child: Text(this.Judul,
           style: TextStyle(fontFamily: 'Helvetica', 
           fontSize: 25, 
@@ -37,35 +37,49 @@ class Article extends StatelessWidget {
           height: 1.5),
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.only(left: 18),
-          child: Row(
-            children: [
-              Container(
-                child: InkWell(
-                  onTap: () {},
-                  child: Text(this.Deskripsi,
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 15,
-                    fontFamily: 'Helvetica'),),
+        Column(
+          children: [
+            Column(
+              children: [
+                Container(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 17, right: 290),
+                    child: Text('Deskripsi',
+                    style: TextStyle(fontFamily: 'Helvetica',
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue),
+                    ),
+                  ),
                 ),
-              ),
-              Container(
-                margin: EdgeInsets.only(left: 10),
-                child: InkWell(
-                  onTap: () {},
-                  child: Text(this.Ulasan,
-                  style: TextStyle(
-                    color: Colors.black,
+                Container(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(21, 5, 10, 10),
+                    child: Text(Deskripsi,
+                    style: TextStyle(fontFamily: 'Helvetica',
                     fontSize: 15,
-                    fontFamily: 'Helvetica'),),
+                    ),),
+                  ),
+                )
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                  child:Padding(
+                    padding: const EdgeInsets.only(left: 17, right: 310),
+                    child: Text('Ulasan',
+                    style: TextStyle(fontFamily: 'Helvetica',
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue),
+                    ),
+                  ),
                 ),
-              )
-            ],
-          ),
-        )
-        
+              ],
+            )
+          ],
+        ) 
       ]),
     );
   }

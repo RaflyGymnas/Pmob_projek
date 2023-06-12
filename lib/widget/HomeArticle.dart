@@ -13,7 +13,7 @@ class HomeArticle extends StatelessWidget {
     return InkWell(
       onTap: () {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => Article(item.Judul,item.gambar, item.Deskripsi, item.Ulasan)));
+            context, MaterialPageRoute(builder: (context) => Article(item.Judul, item.gambar, item.Deskripsi, item.Ulasan)));
       },
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -28,7 +28,7 @@ class HomeArticle extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(15),
                 child: Image(
-                  image: NetworkImage(item.gambar),
+                  image: AssetImage(item.gambar),
                   width: 280,
                   height: 130,
                   fit: BoxFit.cover,

@@ -4,12 +4,19 @@ import 'package:flutter/material.dart';
 import 'package:projek_pmob/NavBar.dart';
 import 'package:projek_pmob/Page/Lokasi.dart';
 import 'package:projek_pmob/Page/SignIn.dart';
+import 'package:provider/provider.dart';
+
+import '../provider/auth.dart';
 
 class Login_page extends StatelessWidget {
-  const Login_page({super.key});
+  Login_page({super.key});
+
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
+    final authService = Provider.of<AuthService>(context);
     return Scaffold(
       body: SingleChildScrollView(
         child: Stack(
@@ -27,6 +34,7 @@ class Login_page extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(top: 240, left: 20, right: 20),
                     child: TextField(
+                      controller: emailController,
                       style: TextStyle(
                         color: Colors.grey.shade400,
                         fontFamily: 'Helvetica',
@@ -56,6 +64,7 @@ class Login_page extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(top: 15, left: 20, right: 20),
                     child: TextField(
+                      controller: passwordController,
                       obscureText: true,
                       style: TextStyle(
                         color: Colors.purple,
@@ -104,7 +113,8 @@ class Login_page extends StatelessWidget {
                       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         InkWell(
-                          onTap: () {
+                          onTap: () async { 
+                            await authService.signInWithEmailAndPassword(emailController.text, passwordController.text);
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "842227586921",
+    "firebase_url": "https://travelars-binoculars-default-rtdb.firebaseio.com",
+    "project_id": "travelars-binoculars",
+    "storage_bucket": "travelars-binoculars.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842227586921:android:5ad8ad87ec3a7956664ff8",
+        "android_client_info": {
+          "package_name": "com.example.projek_pmob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842227586921-28lvrt5r6i9adj94tqo5ela3igljb8ak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIMWKARYxJOEf8xmrRWESw3pmQMAIzOhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842227586921-28lvrt5r6i9adj94tqo5ela3igljb8ak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
